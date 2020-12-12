@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CS 5820- Final Project</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+  <script src="d3.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"
+    integrity="sha512-wNH6xsp2n8CfB91nrBtfc4sfLwYPBMjSWVUwQOp60AYYXH6i8yCwuKFZ4rgK2i6pQek/b+bSyR7b01/922IBzQ=="
+    crossorigin="anonymous"></script>
+</head>
+
+<body onload="zoom()">
+  <div id="title">
+    <h1>US College Graduation rates from 1997 to 2018</h1>
+    <h3 id="link"><a href="https://www.youtube.com/watch?v=b81ogkskHTo">Video Presentation Link</a></h3>
+  </div>
+  <div id="names">
+    <p class="info">Name: Conner Nance; E-Mail: conner.nance1@gmail.com; A#: A01836222</p>
+    <p class="info">Name: Laryssa Revelli; E-Mail: laryssa@aggiemail.usu.edu; A#: A01979841</p>
+    <p class="info">Name: Tanner Hooper; E-Mail: tannerhooper@yahoo.com; A#: A01818783</p>
+  </div>
+
+  <div id="year-chart" class="view">
+  </div>
+
+  <div id="averages">
+    <h2 id="fAid">Financial Aid</h2>
+    <div id="buttons">
+    </div>
+  </div>
+
+  <div id="spend-chart" class="view">
+    <h2>Instructional Expenditures per student</h2>
+  </div>
+
+  <div>
+    <div class="leftColumn">
+      <svg id="map" width="960" height="600"></svg>
+    </div>
+    <div class="rightColumn">
+      <div id="line-chart" class="view">
+        <h3 id="stAvg"></h3>
+      </div>
+    </div>
+    <div id="top-schools">
+      <div id="national"></div>
+      <div id="state"></div>
+    </div>
+  </div>
+  <script type="application/javascript" src="public/js/tools.js"></script>
+  <script type="application/javascript" src="public/js/yearChart.js"></script>
+  <script type="application/javascript" src="public/js/spendChart.js"></script>
+  <script type="application/javascript" src="public/js/lineChart.js"></script>
+  <script type="application/javascript" src="public/js/map.js"></script>
+  <script type="application/javascript" src="public/js/tooltip.js"></script>
+  <script type="application/javascript" src="public/js/demographic.js"></script>
+  <script type="application/javascript" src="public/js/list.js"></script>
+  <script type="application/javascript" src="public/js/zoom.js"></script>
+  <script type="application/javascript" src="public/js/main.js"></script>
+</body>
+
+</html>

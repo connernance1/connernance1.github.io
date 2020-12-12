@@ -1,0 +1,224 @@
+body {
+  font: 11px sans-serif;
+  background-image: url('https://images.homedepot-static.com/productImages/af0d6229-506e-4b90-bcbe-6efaf49113a7/svn/light-beige-ivy-hill-tile-clay-tile-ext3rd101045-64_1000.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#title {
+  display: flex;
+}
+
+#link {
+margin-left: 66%;
+}
+#names {
+  display: flex;
+}
+
+#names p{
+  padding-right: 10%;
+}
+
+.yeartext{
+    text-anchor:middle;
+    font-size: 28 px;
+    stroke-width: 0.1px;
+    stroke: #e5e5e5;
+}
+.yearChart{
+    stroke: #FFF;
+}
+
+
+
+#year-chart{
+  background-color: white;
+  border-radius: 0.5%;
+  border: solid black 4px;
+  margin-bottom: 0.5%;
+  overflow: auto;
+}
+
+#averages{
+  background-color: white;
+  border-radius: 0.5%;
+  border: solid black 4px;
+  margin-bottom: 0.5%;
+  padding: 0.7%;
+}
+
+#buttons{
+  display: flex;
+  margin-left: 35%;
+}
+
+#button{
+  padding-right: 10%;
+}
+
+#spend-chart{
+  margin-bottom: 0.5%;
+  padding-left: 1%;
+  background-color: white;
+  border-radius: 0.5%;
+  border: solid black 4px;
+  overflow: auto;
+}
+
+.dots{
+    stroke: #A0A0A0;
+    stroke-dasharray: 2,2;
+}
+.highlighted{
+    stroke: orange;
+    stroke-width:4;
+    resize: 4
+}
+
+#fAid {
+  display: inline;
+}
+
+#stAvg {
+  padding-left: 2%;
+}
+
+#top-schools{
+  background-color: white;
+  border-radius: 0.5%;
+  border: solid black 4px;
+  margin-top: 1%;
+  margin-right: 65.6%;
+  height: 210px;
+}
+
+#national {
+  margin-left: 1%;
+  text-align: center;
+  float: left;
+}
+
+#state {
+  margin-right: 4%;
+  text-align: right;
+}
+
+#state h3 {
+  text-align: center;
+}
+
+#state p {
+  text-align: right;
+}
+
+.leftColumn {
+  float:right;
+  width: 64%;
+  background-color: white;
+  border-radius: 0.5%;
+  border: solid black 4px;
+  overflow: auto;
+}
+
+.rightColumn {
+  width: 34%;
+  background-color: white;
+  border-radius: 0.5%;
+  border: solid black 4px;
+  overflow: auto;
+}
+
+#map {
+  border: solid lightgray;
+  margin-top: 0.5%;
+  margin-left: 9.5%;
+  /* transform: scaleX(1.2); */
+}
+
+#map svg g g line {
+  -webkit-transform: translate(0px, -5px);
+
+}
+
+#legend {
+  margin-top: 1%;
+  margin-left: 50%;
+}
+
+.curYrCircle {
+  fill: purple;
+  opacity: .5;
+  stroke: black;
+}
+
+.avgline {
+  fill: none;
+  stroke-width: 2;
+}
+
+/***************************************/
+/*            Map Styling              */
+
+/* On mouse hover, lighten state color */
+/* path:hover {
+	fill-opacity: .7;
+} */
+
+.states :hover {
+    fill: rgb(230, 211, 211);
+  }
+  
+  .state-borders {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 0.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+  }
+/* slider ------------------------------ */
+
+.slider-holder{
+    width: 700px;
+  }
+  .ticks {
+    font: 14px sans-serif;
+  }
+  
+  .track,
+  .track-inset,
+  .track-overlay {
+    stroke-linecap: round;
+  }
+  
+  .track {
+    stroke: #bbb;
+    stroke-width: 10px;
+  }
+  
+  .track-overlay {
+    pointer-events: stroke;
+    stroke-width: 50px;
+    cursor: crosshair;
+  }
+  
+  .sel-range{
+    stroke: #9CCC65;
+    stroke-width: 8px;
+  }
+  
+  .handle {
+    fill: #E0F7FA;
+    stroke: #000;
+    stroke-opacity: 0.5;
+    stroke-width: 1.25px;
+    cursor: pointer;
+  }
+  .handle:hover{
+      fill: #B2EBF2;
+  }
+  .handle.active {
+    fill: #4DD0E1;
+  }
